@@ -16,6 +16,13 @@
       ga('create', 'UA-104943431-1', 'auto');
       ga('send', 'pageview');
     
+    var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = url;}
+      });
+    }
+
     </script>
   <script>
   cheet('↑ ↑ ↓ ↓ ← → ← → b a', function () {
@@ -298,10 +305,10 @@
     <h1 class="font-animete-me" >André :D</h1>  
     <p>Site com o único objetivo de ser inútil <i class="em em-sunglasses"></i></p>
     <p>    
-    <a href="http://twitter.com/vwvvvw" target="_blank">Twitter</a>
-	  <a href="http://steamcommunity.com/id/andre_e" target="_blank">Steam</a> 
-    <a href="http://twitch.com/andrxd" target="_blank">Twitch</a>	
-	  <a href="https://www.last.fm/user/andre_e" target="_blank">Last.fm</a> 
+    <a href="http://twitter.com/vwvvvw" onclick="trackOutboundLink('http://twitter.com/vwvvvw'); return false;" target="_blank">Twitter</a>
+	  <a href="http://steamcommunity.com/id/andre_e" onclick="trackOutboundLink('http://steamcommunity.com/id/andre_e'); return false;" target="_blank">Steam</a> 
+    <a href="http://twitch.com/andrxd" onclick="trackOutboundLink('http://twitch.com/andrxd'); return false;" target="_blank">Twitch</a>	
+	  <a href="https://www.last.fm/user/andre_e" onclick="trackOutboundLink('https://www.last.fm/user/andre_e'); return false;" target="_blank">Last.fm</a> 
   </div>
   <audio autoplay loop id="background-music">
       <source src="Game.ogg" type="audio/ogg">
