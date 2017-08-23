@@ -133,17 +133,20 @@
   }  
   .git-link{
     animation-name: font-pulse;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
   }
   .image-container{
-    margin-top: 7%;
+    margin-top: 6%;
     text-align: center;      
     vertical-align: middle;
   }
   .center-img {
     margin: 0 auto;
     width: 65%;    
+  }
+  .social-networks{
+    margin-top: 5%;
   }
   .volume-play{
     position: absolute;    
@@ -161,11 +164,11 @@
     /* text-decoration: none; */
     color: white;
     font-weight: bold;
-    Font-size: 1.3em;
+    font-size: 1.3em;
     margin: 3px;
     transition: 0.5s;
     animation-name: font-pulse;
-    animation-duration: 8s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
   }
   a:hover{
@@ -366,7 +369,7 @@
       .center{        
         width: 90%;
         min-width: 300px;
-        margin-top: 7%;
+      margin-top: 7%;
         height: unset;
       }
       .center-img {                
@@ -419,12 +422,14 @@
     <div style="max-width: 400px;margin:0 auto;text-align: justify">
       <p>Hi, my name is André, I'm a just a guy from Brazil who really likes to spend time doing random stuff.</p>            
     </div>
-    <p style="margin-top: 5%;Font-size: 0.9em;">Fell free to add/follow me on my social networks</p>
+    <div class="social-networks">
+    <p style="Font-size: 0.9em;">Fell free to add/follow me on my social networks</p>
     <p>    
     <a href="http://twitter.com/vwvvvw" data-event-category="LinkClick" data-event-action="Twitter" target="_blank">Twitter</a>
 	  <a href="http://steamcommunity.com/id/andre_e"data-event-category="LinkClick" data-event-action="Steam" target="_blank">Steam</a> 
     <a href="http://twitch.com/andrxd" data-event-category="LinkClick" data-event-action="Twitch" target="_blank">Twitch</a>	
-	  <a href="https://www.last.fm/user/andre_e" data-event-category="LinkClick" data-event-action="LastFm" target="_blank">Last.fm</a> 
+    <a href="https://www.last.fm/user/andre_e" data-event-category="LinkClick" data-event-action="LastFm" target="_blank">Last.fm</a> 
+    </div>
   </div>
   <audio autoplay loop id="background-music">
       <source src="Game.ogg" type="audio/ogg">
