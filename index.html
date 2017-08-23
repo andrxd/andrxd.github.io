@@ -115,7 +115,7 @@
   });</script> 
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-    <title>André</title>
+    <title>about me</title>
 	<style>
   .center {
     margin: auto;
@@ -131,8 +131,13 @@
     -moz-box-shadow: 0px 0px 76px 6px rgba(0,0,0,0.56);
     box-shadow: 0px 0px 76px 6px rgba(0,0,0,0.56);
   }  
+  .git-link{
+    animation-name: font-pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
   .image-container{
-    margin-top: 13%;
+    margin-top: 7%;
     text-align: center;      
     vertical-align: middle;
   }
@@ -159,6 +164,9 @@
     font-size: 1.3em;
     margin: 3px;
     transition: 0.5s;
+    animation-name: font-pulse;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
   }
   a:hover{
     color: blue;
@@ -246,7 +254,11 @@
           border-color: red;
         } 
       }
-      
+      @keyframes font-pulse {
+        0%   {text-shadow: 0 0 5px white;}      
+        50% {text-shadow: 0 0 50px white;}
+        100% {text-shadow: 0 0 5px white;}
+      }
 .loader {
     text-align: center;
     position: absolute;
@@ -403,8 +415,11 @@
       <img class="center-img" src="https://gifimage.net/wp-content/uploads/2017/08/persona-4-gif-19.gif" >      
     </div>
 	<div style="text-align: center; margin-top: 7%">
-    <h1 class="font-animete-me" >André :D</h1>  
-    <p>Site com o único objetivo de ser inútil <i class="em em-sunglasses"></i></p>
+    <h1 class="font-animete-me" >About me</h1>  
+    <div style="max-width: 400px;margin:0 auto;text-align: justify">
+      <p>Hi, my name is André, I'm a just a guy from Brazil who really likes to spend time doing random stuff.</p>            
+    </div>
+    <p style="margin-top: 7%">Fell free to add/follow me on my social networks</p>
     <p>    
     <a href="http://twitter.com/vwvvvw" data-event-category="LinkClick" data-event-action="Twitter" target="_blank">Twitter</a>
 	  <a href="http://steamcommunity.com/id/andre_e"data-event-category="LinkClick" data-event-action="Steam" target="_blank">Steam</a> 
@@ -443,7 +458,7 @@
       }); 
     
   </script>
-  <div class="footer-message">Made with <i class="em em-joy"></i> by<a href="https://github.com/andrxd" data-event-category="LinkClick" data-event-action="GitHub" style="text-decoration: none; font-size: 1em">andre</a></div>
+  <div class="footer-message">Made with <i class="em em-joy"></i> by<a href="https://github.com/andrxd" data-event-category="LinkClick" data-event-action="GitHub" class="git-link" style="text-decoration: none; font-size: 1em">andre</a></div>
   </body>
 </html>
 
