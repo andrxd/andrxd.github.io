@@ -1,0 +1,295 @@
+.center {
+    margin: auto;
+    margin-top: 2%;
+    width: 50%;
+    min-width: 500px;
+    height: 90%;
+    min-height: 380px;
+    border: 3px solid white;
+    padding: 10px;
+    background-color: black;
+    -webkit-box-shadow: 0px 0px 76px 6px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 0px 76px 6px rgba(0, 0, 0, 0.56);
+    box-shadow: 0px 0px 76px 6px rgba(0, 0, 0, 0.56);
+  }
+
+  .git-link {
+    animation-name: font-pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  .image-container {
+    margin-top: 6%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .center-img {
+    margin: 0 auto;
+    width: 65%;
+  }
+
+  .volume-play {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+  }
+
+  .volume-mute {
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    display: none;
+  }
+
+  a {
+    /* text-decoration: none; */
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 3px;
+    transition: 0.5s;
+    animation-name: font-pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  a:hover {
+    color: blue;
+    transition: 0.5s;
+    animation: 1s infinite fontColorChange
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+    background-image: url("../media/images/paper.gif");
+  }
+
+  fonte-anaglyph {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+  }
+
+  .footer-message {
+    position: absolute;
+    bottom: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em !important;
+  }
+
+  .animate-me {
+    animation: 0.1s infinite bgcolorchange;
+  }
+
+  @keyframes bgcolorchange {
+    0% {
+      background-color: red;
+    }
+    25% {
+      background-color: yellow;
+    }
+    50% {
+      background-color: green;
+    }
+    75% {
+      background-color: blue;
+    }
+    100% {
+      background-color: red;
+    }
+  }
+
+  .font-animete-me {
+    animation: 0.3s infinite fontColorChange;
+  }
+
+  @keyframes fontColorChange {
+    0% {
+      color: red;
+    }
+    25% {
+      color: yellow;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
+
+  .border-animete-me {
+    animation: 5s infinite borderColorChange;
+  }
+
+  @keyframes borderColorChange {
+    0% {
+      border-color: red;
+    }
+    25% {
+      border-color: yellow;
+    }
+    50% {
+      border-color: green;
+    }
+    75% {
+      border-color: blue;
+    }
+    100% {
+      border-color: red;
+    }
+  }
+
+  @keyframes font-pulse {
+    0% {
+      text-shadow: 0 0 5px white;
+    }
+    50% {
+      text-shadow: 0 0 50px white;
+    }
+    100% {
+      text-shadow: 0 0 5px white;
+    }
+  }
+
+  .loader {
+    text-align: center;
+    position: absolute;
+  }
+
+  .chuva {
+    position: absolute;
+    top: -10;
+  }
+
+  .loader span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: -280px 40px 54px -34px;
+    background: #ff0000;
+    background: url("./media/images/joy.png");
+    animation: loader 10s infinite linear;
+    -moz-animation: loader 10s infinite linear;
+  }
+
+  .loader span:nth-child(5n+5) {
+
+    animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+  }
+
+  .loader span:nth-child(3n+2) {
+
+    animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+  }
+
+  .loader span:nth-child(2n+5) {
+
+    animation-delay: 1.7s;
+    -moz-animation-delay: 1.7s;
+  }
+
+  .loader span:nth-child(3n+10) {
+
+    animation-delay: 2.7s;
+    -moz-animation-delay: 2.7s;
+  }
+
+  .loader span:nth-child(7n+2) {
+
+    animation-delay: 3.5s;
+    -moz-animation-delay: 3.5s;
+  }
+
+  .loader span:nth-child(4n+5) {
+
+    animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
+  }
+
+  .loader span:nth-child(3n+7) {
+
+    animation-delay: 8s;
+    -moz-animation-delay: 8s;
+  }
+
+  @keyframes loader {
+    0% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+
+      transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+
+      transform: translate(100px, 700px) rotateZ(270deg);
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+
+      transform: translate(150px, 900px) rotateZ(360deg);
+    }
+  }
+
+  @-moz-keyframes loader {
+    0% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+
+      transform: translate(0, 0px) rotateZ(0deg);
+    }
+    75% {
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+
+      transform: translate(100px, 700px) rotateZ(270deg);
+    }
+    100% {
+      width: 80px;
+      height: 80px;
+      opacity: 0;
+
+      transform: translate(150px, 900px) rotateZ(360deg);
+    }
+  }
+  /* Extra Small Devices, Phones */
+
+  @media only screen and (max-width: 480px) {
+    .center {
+      width: 90%;
+      min-width: 300px;
+      margin-top: 7%;
+      height: unset;
+    }
+    .center-img {
+      width: 90%;
+    }
+    .social-networks {
+      margin-top: unset;
+    }
+  }
+
+  @media (min-width: 480px) {
+    .social-networks {
+      margin-top: 8%;
+    }
+  }
