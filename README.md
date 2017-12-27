@@ -1,2 +1,2 @@
 # mysite
-Just a html page with my social networks 
+sharing my social networks in a weird way
