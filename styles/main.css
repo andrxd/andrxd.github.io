@@ -177,7 +177,7 @@
     height: 80px;
     margin: -280px 40px 54px -34px;
     background: #ff0000;
-    background: url("./media/images/joy.png");
+    background: url("../media/images/joy.png");
     animation: loader 10s infinite linear;
     -moz-animation: loader 10s infinite linear;
   }
