@@ -14,9 +14,9 @@
   }
 .fab {
   /* padding: 20px; */
-  margin-right:10px;
-  font-size: 1.8em;
-  /* width: 35px */;
+  margin-right:8px;
+  font-size: 1.65em;
+  /* width: 35px; */
   text-align: center;
   text-decoration: none;
 
@@ -78,6 +78,7 @@
     transition: 0.5s;
     background-image: url("../media/images/stars.gif");
   }
+
 
   fonte-anaglyph {
     font-family: 'Roboto', sans-serif;
