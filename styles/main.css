@@ -288,7 +288,7 @@
     .center {
       width: 90%;
       min-width: 300px;
-      margin-top: 7%;
+      margin-top: 5%;
       height: unset;
     }
     .center-img {
@@ -296,6 +296,15 @@
     }
     .social-networks {
       margin-top: unset;
+    }
+    h1 {
+      margin: 0%
+    }
+    h2 {
+      margin-top: 2%
+    }
+    h4 {
+      margin-bottom: 4%;
     }
   }
 
